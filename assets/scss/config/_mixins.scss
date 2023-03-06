@@ -1,0 +1,14 @@
+@mixin annabelleFont($fs) {
+    font-family: $annabelleFont;
+    font-size: $fs;
+}
+
+@mixin beringinFont($fs) {
+    font-family: $beringinFont;
+    font-size: $fs;
+}
+
+@mixin timesNewRomanFont($fs) {
+    font-family: $timesNewRomanFont;
+    font-size: $fs;
+}

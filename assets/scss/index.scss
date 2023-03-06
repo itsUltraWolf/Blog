@@ -1,0 +1,127 @@
+@import "config/vars";
+@import "config/mixins";
+
+body {
+    background: var(--bs-gray);
+
+    h1 {
+        @include timesNewRomanFont(46px);
+    }
+
+    h2 {
+        @include timesNewRomanFont(36px);
+    }
+
+    h3 {
+        @include timesNewRomanFont(26px);
+    }
+
+    h4 {
+        @include timesNewRomanFont(24px);
+    }
+
+    p {
+        @include timesNewRomanFont(18px);
+    }
+
+    .btn {
+        @include timesNewRomanFont(18px);
+        color: $blogtextColor1;
+        background: $blogtextColor2;
+        border-radius: 0;
+    }
+
+    header {
+        p {
+            @include annabelleFont(46px);
+            color: $blogtextColor1;
+        }
+    }
+
+    .heading {
+        color: $blogtextColor1;
+
+        h3 {
+            &:first-child {
+                font-style: italic;
+                letter-spacing: 4px;
+            }
+
+            &:last-child {
+                @include annabelleFont(26px);
+                font-weight: bold;
+                text-shadow: 2px 3px 3px $lightColor1;
+            }
+        }
+    }
+
+    .content {
+        background: $blogtextColor1;
+        border-radius: 20px;
+
+        .hero-blog {
+            p {
+                color: $lightColor2;
+            }
+
+            &:nth-child(4) {
+                background: $darkColor;
+                color: $blogtextColor1;
+
+                p {
+                    color: $blogtextColor1;
+
+                    &:first-child {
+                        font-style: italic;
+                    }
+                }
+            }
+
+            color: $blogtextColor2;
+        }
+
+        .features {
+            background: $darkColor;
+            color: $blogtextColor1;
+        }
+
+        .logos-album {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            height: 125px;
+
+            img {
+                height: 100%;
+            }
+        }
+
+        .cards {
+            .img-bg {
+                display: flex;
+                align-items: end;
+                background: $lightColor1;
+                height: 150px;
+
+                p {
+                    letter-spacing: 1px;
+                    margin-left: 1rem;
+                    padding: 0 10px;
+                    background: $blogtextColor2;
+                    color: $blogtextColor1;
+                }
+            }
+        }
+
+        .contacts {
+            input,
+            textarea {
+                background: $lightColor;
+            }
+
+            textarea {
+                min-height: 250px;
+            }
+        }
+    }
+}
